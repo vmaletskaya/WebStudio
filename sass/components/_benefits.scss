@@ -48,7 +48,9 @@
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-bottom: var(--card-set-gap);
      margin-left: var(--card-set-gap);
-
+    &:nth-child(2n+1) {
+      margin-left: 0;
+      }
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
@@ -63,7 +65,7 @@
   @media screen and (min-width: 768px) {
      display: flex;
      flex-wrap: wrap;
-     margin-left: calc(-1 * var(--card-set-gap));
+    //  margin-left: calc(-1 * var(--card-set-gap));
   }
   @media screen and (min-width: 1200px) {
     display: flex;

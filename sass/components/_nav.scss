@@ -1,8 +1,19 @@
 
 .nav__list {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+
+    @media screen and (min-width:480px)  {
+        display: none;
+    }
+          @media screen and (min-width:480px) {
+              display: none;
+          }
+                        @media screen and (min-width:1200px) {
+                            display: flex;
+                                gap: 50px;
+                                align-items: center;
+                        }
+
+   
 }
 
 .nav__link {

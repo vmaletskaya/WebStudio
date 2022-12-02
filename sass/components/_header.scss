@@ -12,12 +12,36 @@
 }
 
 .header__logo {
-    margin-right: 91px;
+
+    @media screen and (min-width:480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+         @media screen and (min-width:786px) {
+             
+         }
+                  @media screen and (min-width:1200px) {
+                    margin-right: 91px;
+                  }
+   
 }
 
 
 .header__list {
-    margin-left: auto;
-    display: flex;
-    gap: 50px;
+
+    @media screen and (min-width:480px) {
+            display: none;
+        }
+    
+        @media screen and (min-width:480px) {
+            display: none;
+        }
+    
+        @media screen and (min-width:1200px) {
+            margin-left: auto;
+                display: flex;
+                gap: 50px;
+        }
+    
+    
 }

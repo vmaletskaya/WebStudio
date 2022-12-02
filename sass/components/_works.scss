@@ -7,6 +7,16 @@
 //   padding-bottom: 94px;
 //  }
 
+  .works{
+    @media screen and (min-width:480px) {
+            // display: none;
+        }
+                 @media screen and (min-width:786px) {
+                    //  display: none;
+                 }
+                                 
+  }
+
  .works__title {
      margin-bottom: 50px;
      font-weight: 700;
