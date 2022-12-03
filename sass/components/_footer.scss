@@ -1,18 +1,18 @@
 .footer .container {
-  @media screen and (min-width: 480px) {
-    // display: flex;
-    // flex-direction: column;
+display: flex;
+align-items: baseline;
+  @media screen and (max-width: 480px) {
+    
+     flex-direction: column;
   }
 
-  @media screen and (min-width: 786px) {
-    display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
+  @media screen and (max-width: 768px) {
+         flex-wrap: wrap;
+         
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
+   
   }
 }
 
@@ -20,14 +20,7 @@
   background-color: var(--background-color-black);
   padding-bottom: 60px;
   padding-top: 60px;
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 786px) {
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
+  
 }
 
 // .footer-address__wrapper{
@@ -40,24 +33,27 @@
 }
 
 .footer__address {
+  margin-top: 20px;
   @media screen and (min-width: 480px) {
+    
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 20px;
+   
   }
 }
 
 .footer__logo {
-  @media screen and (min-width: 480px) {
-    // margin-left: 163px;
-    // margin-right: 163px;
+  @media screen and (max-width: 480px) {
+     margin-left: 163px;
+     margin-right: 163px;
+     
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -65,11 +61,11 @@
 }
 
 .footer__list {
-  @media screen and (min-width: 480px) {
-    // text-align: center;
+  @media screen and (max-width: 480px) {
+    text-align: center;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -135,18 +131,21 @@
 }
 
 .footer__wrapper {
-  @media screen and (min-width: 480px) {
-    // box-sizing: border-box;
-    // margin-top: 60px;
-    // margin-left: auto;
-    // margin-right: auto;
+
+  box-sizing: border-box;
+  @media screen and (max-width: 480px) {
+     
+    margin-top: 60px;
+    margin-left: auto;
+     margin-right: auto;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1200px) {
-    box-sizing: border-box;
+
     margin-left: 70px;
     margin-right: auto;
   }
@@ -161,11 +160,11 @@
   text-transform: uppercase;
   color: var(--main-title-color);
 
-  @media screen and (min-width: 480px) {
-    // text-align: center;
+  @media screen and (max-width: 480px) {
+    text-align: center;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -210,11 +209,11 @@
   text-transform: uppercase;
   color: var(--main-title-color);
 
-  @media screen and (min-width: 480px) {
-    // text-align: center;
+  @media screen and (max-width: 480px) {
+    text-align: center;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -222,24 +221,25 @@
 }
 
 .mailing-list__container {
-  @media screen and (min-width: 480px) {
-    // margin-top: 60px;
+  @media screen and (max-width: 480px) {
+    margin-top: 60px;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
+  
   }
 
   @media screen and (min-width: 1200px) {
-    // margin-top: 60px;
+   
   }
 }
 
 .mailing-list__list {
-  @media screen and (min-width: 480px) {
-    // flex-direction: column;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -250,11 +250,11 @@
 }
 
 .mailing-list__group {
-  @media screen and (min-width: 480px) {
-    // width: 450px;
+  @media screen and (max-width: 480px) {
+     width: 450px;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
@@ -316,11 +316,13 @@
     background-color: var(--btn-hover-focus-color);
   }
 
-  @media screen and (min-width: 480px) {
-    // margin-top: 20px;
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
