@@ -1,8 +1,9 @@
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.menu{
+  
+   display: flex;
+   padding: 0;
+   margin: 0;
+   list-style: none;
 }
 
 @media (max-width: 767px) {
@@ -58,14 +59,17 @@
   display: flex;
   flex-direction: column;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: #ffffff;
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+    @media screen and (max-width: 479px) {
+        padding: 48px 10px;
+}
 }
 
 .menu-container.is-open {
