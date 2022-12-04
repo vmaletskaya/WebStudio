@@ -4,7 +4,7 @@
 
 .staff__title {
   margin-bottom: 30px;
- font-weight: 700;
+  font-weight: 700;
   font-size: 28px;
   line-height: 33px;
   text-align: center;
@@ -13,61 +13,64 @@
   color: #212121;
 
   @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-          font-weight: 700;
-          font-size: 36px;
-          line-height: calc(42 / 36);
-          letter-spacing: 0.03em;
-          color: var(--secondary-title-color);
-          text-align: center;
-    }
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+    text-align: center;
+  }
 }
 
 .staff__list {
-  display: flex;
   @media screen and (min-width: 480px) {
   }
   @media screen and (max-width: 786px) {
-    
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-    
+    display: flex;
     margin-left: calc(-1 * var(--card-set-gap));
   }
 }
 
 .staff__card {
-  margin-left: var(--card-set-gap);
+  
   margin-bottom: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
-      background-color: var(--main-title-color);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-          0px 2px 1px rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: 480px) {
-      
-    }
-    
-        @media screen and (max-width: 786px) {
-          flex-basis: calc(100% / 2 - var(--card-set-gap));
-        }
-    
-        @media screen and (min-width: 1200px) {
-           
-            };
-        }
+  background-color: var(--main-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: 0;
+  }
 
+  @media screen and (max-width: 786px) {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    &:nth-child(2n + 1) {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: var(--card-set-gap);
+  }
+}
 
 .staff__wrapper {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
     padding-top: 30px;
-      padding-bottom: 24px;
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 30px;
-        padding-bottom: 30px;
-    }
-  
-    
+    padding-bottom: 30px;
+  }
 }
 
 .staff__name {
