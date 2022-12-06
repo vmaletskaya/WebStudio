@@ -9,6 +9,10 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: calc(31 / 26);
+        }
 }
 
 .logo__text--dark {

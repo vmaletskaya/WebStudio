@@ -4,38 +4,47 @@
 //  }
 
 .benefits__wrapper {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 120px;
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
+      height: 120px;
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+    
+      background-color:#f5f4fa ;
+      border-radius: 4px;
+  
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  //   height: 120px;
+  //   display: flex;
+  //   margin-bottom: 30px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: #f5f4fa;
+  //   border-radius: 4px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 120px;
+  //   display: flex;
+  //   margin-bottom: 30px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: #f5f4fa;
+  //   border-radius: 4px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 120px;
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  //   height: 120px;
+  //   display: flex;
+  //   margin-bottom: 30px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: #f5f4fa;
+  //   border-radius: 4px;
+  // }
 }
 
 .benefits__card {
@@ -99,17 +108,20 @@
 }
 
 .benefits__title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+    @media screen and (min-width: 768px) {
+        text-align: left;}
 
-  @media screen and (max-width: 480px) {
-    text-align: center;
-  }
+  // @media screen and (max-width: 480px) {
+  //   text-align: center;
+  // }
 }
 
 .benefits__text {
