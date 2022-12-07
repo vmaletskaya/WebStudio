@@ -327,16 +327,23 @@
 }
 
 .mailing-list__group {
-  @media screen and (max-width: 480px) {
-    //  width: 450px;
-  }
+  display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    @media screen and (max-width: 1199px) {
+      align-items: center;
+    }
+  // @media screen and (max-width: 480px) {
+  //   //  width: 450px;
+  // }
 
-  @media screen and (min-width: 768px) {
-  }
+  // @media screen and (min-width: 768px) {
+  // }
 
-  @media screen and (min-width: 1200px) {
-    // width: 358px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   // width: 358px;
+  // }
 }
 
 .mailing-list__field {
@@ -414,6 +421,9 @@
 }
 
 .btn-send {
+  margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -438,20 +448,20 @@
     background-color: var(--btn-hover-focus-color);
   }
 
-  @media screen and (max-width: 480px) {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @media screen and (max-width: 480px) {
+  //   margin-top: 20px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 
-  @media screen and (max-width: 768px) {
-    margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-  }
+  // @media screen and (max-width: 768px) {
+  //   margin-top: 20px;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  // }
 
-  @media screen and (min-width: 1200px) {
-  }
+  // @media screen and (min-width: 1200px) {
+  // }
 }
 
 .mailing-list__icon {

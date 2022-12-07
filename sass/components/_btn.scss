@@ -2,7 +2,7 @@
     border-radius: 4px;
     display: block;
     margin: 0 auto;
-    padding: 10px 32px;
+   padding: 10px 24px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -23,12 +23,12 @@
      background-color: var(--btn-hover-focus-color);
         }
 
-                 @media screen and (min-width: 480px) {
-                    padding: 10px 24px;
+               //   @media screen and (min-width: 480px) {
+               //      padding: 10px 24px;
                 
-                 }
+               //   }
         
-                 @media screen and (min-width: 768px) {
-                    padding: 10px 24px;
+                 @media screen and (min-width: 1200px) {
+                     padding: 10px 32px;
                  }
 }

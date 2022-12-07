@@ -8,12 +8,15 @@
 //  }
 
   .works{
-    @media screen and (max-width:480px) {
+    @media screen and (max-width: 1200px) {
             display: none;
         }
-                 @media screen and (max-width:786px) {
-                 display: none;
-                 }
+    // @media screen and (max-width:480px) {
+    //         display: none;
+    //     }
+    //              @media screen and (max-width:786px) {
+    //              display: none;
+    //              }
                                  
   }
 

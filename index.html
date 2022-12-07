@@ -72,9 +72,11 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero hero__overlay">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title">Ефективні рішення для
+            <br/>
+             вашого бізнесу</h1>
           <button class="hero__btn" type="button" data-modal-open>
             Замовити послугу
           </button>
@@ -185,12 +187,13 @@
           <h2 class="staff__title">Наша команда</h2>
           <ul class="staff__list list">
             <li class="staff__card">
-              <img
-                src="./img/team/ihor-img-4.jpg"
-                alt="ihor"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img\team\img_l@1x-1.jpg 1x, img\team\img_l@2x-1.jpg 2x ">
+                <source media="(min-width: 768px)" srcset="img\team\img_m@1x-1.jpg 1x, img\team\img_m@2x-1.jpg 2x ">
+                <source media="(min-width: 767px)" srcset="img\team\img_s@1x-1.jpg 1x, img\team\img_s@2x-1.jpg 2x ">
+              <img src="./img/team/ihor-img-4.jpg" alt="ihor" />
+              </picture>
+              
               <div class="staff__wrapper">
                 <h3 class="staff__name">Ігор Дем'яненко</h3>
                 <p class="staff__profession">Product Designer</p>
@@ -251,12 +254,11 @@
               </div>
             </li>
             <li class="staff__card">
-              <img
-                src="./img/team/olga-img-5.jpg"
-                alt="olga"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img\team\img_l@1x-1.jpg 1x, img\team\img_l@2x-1.jpg 2x ">
+              <img src="./img/team/olga-img-5.jpg" alt="olga" width="270" height="260" />
+              </picture>
+              
               <div class="staff__wrapper">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
                 <p class="staff__profession">Frontend Developer</p>
@@ -317,12 +319,10 @@
               </div>
             </li>
             <li class="staff__card">
-              <img
-                src="./img/team/mukola-img-6.jpg"
-                alt="mukola"
-                width="270"
-                height="260"
-              />
+              <picture>
+              <img src="./img/team/mukola-img-6.jpg" alt="mukola" width="270" height="260" />
+              </picture>
+              
               <div class="staff__wrapper">
                 <h3 class="staff__name">Микола Тарасов</h3>
                 <p class="staff__profession">Marketing</p>
@@ -383,12 +383,10 @@
               </div>
             </li>
             <li class="staff__card">
-              <img
-                src="./img/team/mukhaylo-img-7.jpg"
-                alt="mukhaylo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img src="./img/team/mukhaylo-img-7.jpg" alt="mukhaylo" width="270" height="260" />
+              </picture>
+              
               <div class="staff__wrapper">
                 <h3 class="staff__name">Михайло Єрмаков</h3>
                 <p class="staff__profession">UI Designer</p>

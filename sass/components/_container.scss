@@ -5,32 +5,46 @@ $breakpoints:(
 );
 
 .container {
-   
-
-    // phone screen
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    padding-left: 15px;
         padding-right: 15px;
-            padding-left: 15px;
-             margin-left: auto;
-             margin-right: auto;
-    }
+        margin: 0 auto;
+    
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 
-    // tablet screen
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-right: 15px;
-            padding-left: 15px;
-            margin-left: auto;
-            margin-right: auto;
-    }
+    // // phone screen
+    // @media screen and (min-width: 480px) {
+    //     width: 480px;
+    //     padding-right: 15px;
+    //         padding-left: 15px;
+    //          margin-left: auto;
+    //          margin-right: auto;
+    // }
 
-    // decktop screen
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        padding-right: 15px;
-            padding-left: 15px;
-            margin-left: auto;
-            margin-right: auto;
-    }
+    // // tablet screen
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    //     padding-right: 15px;
+    //         padding-left: 15px;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    // }
+
+    // // decktop screen
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    //     padding-right: 15px;
+    //         padding-left: 15px;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    // }
 }
