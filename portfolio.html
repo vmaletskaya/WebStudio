@@ -47,49 +47,120 @@
           </ul>
         </nav>
         <ul class="header__list list">
-          <li>
+          <li class="header__item">
             <a
               href="mailto:info@devstudio.com"
-              class="header__mail link nav__link"
-              ><svg class="header__icon" width="16" height="12">
+              class="header__contact link nav__link"
+              ><svg class="header__icon-mail" width="16" height="12">
                 <use href="./img/icons.svg.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="header__tel link nav__link"
-              ><svg class="header__icon" width="10" height="16">
+          <li class="header__item">
+            <a href="tel:+380961111111" class="header__contact link nav__link"
+              ><svg class="header__icon-tel" width="10" height="16">
                 <use href="./img/icons.svg.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./img/icons.svg.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main Contetnt -->
     <main>
       <section class="section">
-        <div class="container">
+        <div class="container portfolio">
           <h1 class="visually-hidden">Наші роботи</h1>
           <!-- Button -->
           <ul class="list btn-works__wrapper">
-            <li><button type="button" class="btn-works">Усі</button></li>
-            <li><button type="button" class="btn-works">Веб-сайти</button></li>
-            <li><button type="button" class="btn-works">Додатки</button></li>
-            <li><button type="button" class="btn-works">Дизайн</button></li>
-            <li><button type="button" class="btn-works">Маркетинг</button></li>
+            <li class="btn-works__item">
+              <button type="button" class="btn-works">Усі</button>
+            </li>
+            <li class="btn-works__item">
+              <button type="button" class="btn-works">Веб-сайти</button>
+            </li>
+            <li class="btn-works__item">
+              <button type="button" class="btn-works">Додатки</button>
+            </li>
+            <li class="btn-works__item">
+              <button type="button" class="btn-works">Дизайн</button>
+            </li>
+            <li class="btn-works__item">
+              <button type="button" class="btn-works">Маркетинг</button>
+            </li>
           </ul>
           <!-- Card Set -->
           <ul class="list grid">
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-1.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x.webp 1x,
+                        img\works\img_l@2x.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x.webp 1x,
+                        img\works\img_m@2x.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x.webp 1x,
+                        img\works\img_s@2x.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x.jpg 1x,
+                        img\works\img_l@2x.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x.jpg 1x,
+                        img\works\img_m@2x.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x.jpg 1x,
+                        img\works\img_s@2x.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-1.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -108,12 +179,64 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-2.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-1.webp 1x,
+                        img\works\img_l@2x-1.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x.webp 1x,
+                        img\works\img_m@2x-1.webp 2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-1.webp 1x,
+                        img\works\img_s@2x-1.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-1.jpg 1x,
+                        img\works\img_l@2x-1.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x.jpg 1x,
+                        img\works\img_m@2x-1.jpg 2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-1.jpg 1x,
+                        img\works\img_s@2x-1.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-2.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -132,12 +255,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-3.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-2.webp 1x,
+                        img\works\img_l@2x-2.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-2.webp 1x,
+                        img\works\img_m@2x-2.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-2.webp 1x,
+                        img\works\img_s@2x-2.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-2.jpg 1x,
+                        img\works\img_l@2x-2.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-2.jpg 1x,
+                        img\works\img_m@2x-2.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-2.jpg 1x,
+                        img\works\img_s@2x-2.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-3.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,12 +330,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-4.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-3.webp 1x,
+                        img\works\img_l@2x-3.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-3.webp 1x,
+                        img\works\img_m@2x-3.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-3.webp 1x,
+                        img\works\img_s@2x-3.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-3.jpg 1x,
+                        img\works\img_l@2x-3.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-3.jpg 1x,
+                        img\works\img_m@2x-3.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-3.jpg 1x,
+                        img\works\img_s@2x-3.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-4.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -180,12 +405,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-5.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-4.webp 1x,
+                        img\works\img_l@2x-4.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-4.webp 1x,
+                        img\works\img_m@2x-4.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-4.jpg 1x,
+                        img\works\img_s@2x-4.jpg   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-4.jpg 1x,
+                        img\works\img_l@2x-4.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-4.jpg 1x,
+                        img\works\img_m@2x-4.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-4.jpg 1x,
+                        img\works\img_s@2x-4.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-5.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -204,12 +480,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-6.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-5.webp 1x,
+                        img\works\img_l@2x-5.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-5.webp 1x,
+                        img\works\img_m@2x-5.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-5.webp 1x,
+                        img\works\img_s@2x-5.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-5.jpg 1x,
+                        img\works\img_l@2x-5.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-5.jpg 1x,
+                        img\works\img_m@2x-5.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-5.jpg 1x,
+                        img\works\img_s@2x-5.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-6.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -228,12 +555,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-7.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-6.webp 1x,
+                        img\works\img_l@2x-6.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-6.webp 1x,
+                        img\works\img_m@2x-6.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-6.webp 1x,
+                        img\works\img_s@2x-6.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-6.jpg 1x,
+                        img\works\img_l@2x-6.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-6.jpg 1x,
+                        img\works\img_m@2x-6.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-6.jpg 1x,
+                        img\works\img_s@2x-6.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-7.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -252,12 +630,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-8.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-7.webp 1x,
+                        img\works\img_l@2x-7.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-7.webp 1x,
+                        img\works\img_m@2x-7.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-7.webp 1x,
+                        img\works\img_s@2x-7.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-7.jpg 1x,
+                        img\works\img_l@2x-7.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-7.jpg 1x,
+                        img\works\img_m@2x-7.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-7.jpg 1x,
+                        img\works\img_s@2x-7.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-8.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -276,12 +705,63 @@
             <li class="grid__item">
               <a class="grid__link link" href="">
                 <div class="grid__thumb">
-                  <img
-                    src="./img/works/works-img-9.jpg"
-                    alt="works"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-8.webp 1x,
+                        img\works\img_l@2x-8.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-8.webp 1x,
+                        img\works\img_m@2x-8.webp   2x
+                      "
+                      type="img\webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-8.webp 1x,
+                        img\works\img_s@2x-8.webp   2x
+                      "
+                      type="img\webp"
+                    />
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img\works\img_l@1x-8.jpg 1x,
+                        img\works\img_l@2x-8.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img\works\img_m@1x-8.jpg 1x,
+                        img\works\img_m@2x-8.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img\works\img_s@1x-8.jpg 1x,
+                        img\works\img_s@2x-8.jpg   2x
+                      "
+                      type="img\jpg"
+                    />
+                    <img
+                      src="./img/works/works-img-9.jpg"
+                      alt="works"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="grid-overlay">
                     <p class="grid-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -302,92 +782,94 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
-        <div>
-          <a class="footer__logo logo" href=""
-            >Web<span class="logo__text logo__text--light">Studio</span></a
-          >
-          <address class="footer__address">
-            <ul class="list">
-              <li class="footer__list">
+        <div class="page-footer__container--tablet">
+          <div class="footer-address__wrapper">
+            <a class="footer__logo logo" href=""
+              >Web<span class="logo__text logo__text--light">Studio</span></a
+            >
+            <address class="footer__address">
+              <ul class="address-list list">
+                <li class="footer__list">
+                  <a
+                    href="https://goo.gl/maps/xZHKxqKx7CFX3MVU"
+                    class="link footer__direction"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a href="mailto:info@devstudio.com" class="link footer__mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a href="tel:+380961111111" class="link footer__tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__wrapper">
+            <h3 class="footer__title">приєднуйтесь</h3>
+            <ul class="footer-socials__list list">
+              <li class="footer-socials__item">
                 <a
-                  href="https://goo.gl/maps/xZHKxqKx7CFX3MVU"
-                  class="link footer__direction"
+                  class="footer-socials__link link"
+                  href="https://instagram.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer"
+                  aria-label="Instagram icon"
                 >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./img/icons.svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__list">
-                <a href="mailto:info@devstudio.com" class="link footer__mail"
-                  >info@devstudio.com</a
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter icon"
                 >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./img/icons.svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__list">
-                <a href="tel:+380961111111" class="link footer__tel"
-                  >+38 096 111 11 11</a
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook icon"
                 >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./img/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linkedin icon"
+                >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./img/icons.svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__wrapper">
-          <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="footer-socials__list list">
-            <li class="footer-socials__item">
-              <a
-                class="footer-socials__link link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram icon"
-              >
-                <svg class="footer-socials__icon" width="20" height="20">
-                  <use href="./img/icons.svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials__item">
-              <a
-                class="footer-socials__link link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter icon"
-              >
-                <svg class="footer-socials__icon" width="20" height="20">
-                  <use href="./img/icons.svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials__item">
-              <a
-                class="footer-socials__link link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook icon"
-              >
-                <svg class="footer-socials__icon" width="20" height="20">
-                  <use href="./img/icons.svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials__item">
-              <a
-                class="footer-socials__link link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Linkedin icon"
-              >
-                <svg class="footer-socials__icon" width="20" height="20">
-                  <use href="./img/icons.svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="mailing-list__container">
           <p class="mailing-list__title">Підпишіться на розсилку</p>
@@ -410,5 +892,70 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link current" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-tel-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-mail-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

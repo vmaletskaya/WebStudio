@@ -1,34 +1,34 @@
 .hero__btn {
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-   padding: 10px 24px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--main-title-color);
-    background: var(--accent-color);
-    cursor: pointer;
-    border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  background: var(--accent-color);
+  cursor: pointer;
+  border: none;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-     background-color: var(--btn-hover-focus-color);
-        }
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-focus-color);
+  }
 
-               //   @media screen and (min-width: 480px) {
-               //      padding: 10px 24px;
-                
-               //   }
-        
-                 @media screen and (min-width: 1200px) {
-                     padding: 10px 32px;
-                 }
+  //   @media screen and (min-width: 480px) {
+  //      padding: 10px 24px;
+
+  //   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }

@@ -27,7 +27,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="header-container  container">
+      <div class="header-container container">
         <a class="logo header__logo" href=""
           >Web<span class="logo__text logo__text--dark">Studio</span></a
         >
@@ -62,21 +62,26 @@
             >
           </li>
         </ul>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40">
             <use href="./img/icons.svg.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для
-            <br/>
-             вашого бізнесу</h1>
+          <h1 class="hero__title">
+            Ефективні рішення для
+            <br />
+            вашого бізнесу
+          </h1>
           <button class="hero__btn" type="button" data-modal-open>
             Замовити послугу
           </button>
@@ -144,11 +149,15 @@
           <ul class="works__list list">
             <li class="works__item">
               <img
-              srcset=".\img\gallery\img_l@1x.jpg 1x, .\img\gallery\img_l@2x.jpg 2x"
+                srcset="
+                  .\img\gallery\img_l@1x.jpg 1x,
+                  .\img\gallery\img_l@2x.jpg 2x
+                "
                 src="./img/gallery/gallery-img-1.jpg"
                 alt="computer work"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="works__overlay">
                 <p class="overlay__text">Десктопні додатки</p>
@@ -156,11 +165,15 @@
             </li>
             <li class="works__item">
               <img
-               srcset=".\img\gallery\img_l@1x-1.jpg 1x, .\img\gallery\img_l@2x-1.jpg 2x"
+                srcset="
+                  .\img\gallery\img_l@1x-1.jpg 1x,
+                  .\img\gallery\img_l@2x-1.jpg 2x
+                "
                 src="./img/gallery/gallery-img-2.jpg"
                 alt="computer work"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="works__overlay">
                 <p class="overlay__text">Мобільні додатки</p>
@@ -168,11 +181,15 @@
             </li>
             <li class="works__item">
               <img
-              srcset=".\img\gallery\img_l@1x-2.jpg 1x, .\img\gallery\img_l@2x-2.jpg 2x"
+                srcset="
+                  .\img\gallery\img_l@1x-2.jpg 1x,
+                  .\img\gallery\img_l@2x-2.jpg 2x
+                "
                 src="./img/gallery/gallery-img-3.jpg"
                 alt="computer work"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="works__overlay">
                 <p class="overlay__text">Дизайнерські рішення</p>
@@ -188,12 +205,56 @@
           <ul class="staff__list list">
             <li class="staff__card">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img\team\img_l@1x-1.jpg 1x, img\team\img_l@2x-1.jpg 2x ">
-                <source media="(min-width: 768px)" srcset="img\team\img_m@1x-1.jpg 1x, img\team\img_m@2x-1.jpg 2x ">
-                <source media="(min-width: 767px)" srcset="img\team\img_s@1x-1.jpg 1x, img\team\img_s@2x-1.jpg 2x ">
-              <img src="./img/team/ihor-img-4.jpg" alt="ihor" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x.webp 1x,
+                    img\team\img_l@2x.webp   2x
+                  "
+                  type="img\webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x.webp 1x,
+                    img\team\img_m@2x.webp   2x
+                  "
+                  type="img\webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x.webp 1x,
+                    img\team\img_s@2x.webp   2x
+                  "
+                  type="img\webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img\team\img_l@1x.jpg 1x, img\team\img_l@2x.jpg 2x"
+                  type="img\jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img\team\img_m@1x.jpg 1x, img\team\img_m@2x.jpg 2x"
+                  type="img\jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img\team\img_s@1x.jpg 1x, img\team\img_s@2x.jpg 2x"
+                  type="img\jpg"
+                />
+
+                <img
+                  src="./img\team\img_s@1x.jpg"
+                  alt="ihor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
               </picture>
-              
+
               <div class="staff__wrapper">
                 <h3 class="staff__name">Ігор Дем'яненко</h3>
                 <p class="staff__profession">Product Designer</p>
@@ -255,10 +316,65 @@
             </li>
             <li class="staff__card">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img\team\img_l@1x-1.jpg 1x, img\team\img_l@2x-1.jpg 2x ">
-              <img src="./img/team/olga-img-5.jpg" alt="olga" width="270" height="260" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-1.webp 1x,
+                    img\team\img_l@2x-1.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-1.webp 1x,
+                    img\team\img_m@2x-1.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-1.webp 1x,
+                    img\team\img_s@2x-1.webp   2x
+                  "
+                  type="img.webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-1.jpg 1x,
+                    img\team\img_l@2x-1.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-1.jpg 1x,
+                    img\team\img_m@2x-1.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-1.jpg 1x,
+                    img\team\img_s@2x-1.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+
+                <img
+                  src="./img\team\img_s@1x-1.jpg"
+                  alt="ihor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
               </picture>
-              
+
               <div class="staff__wrapper">
                 <h3 class="staff__name">Ольга Рєпіна</h3>
                 <p class="staff__profession">Frontend Developer</p>
@@ -320,9 +436,65 @@
             </li>
             <li class="staff__card">
               <picture>
-              <img src="./img/team/mukola-img-6.jpg" alt="mukola" width="270" height="260" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-2.webp 1x,
+                    img\team\img_l@2x-2.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-2.webp 1x,
+                    img\team\img_m@2x-2.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-2.webp 1x,
+                    img\team\img_s@2x-2.webp   2x
+                  "
+                  type="img.webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-2.jpg 1x,
+                    img\team\img_l@2x-2.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-2.jpg 1x,
+                    img\team\img_m@2x-2.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-2.jpg 1x,
+                    img\team\img_s@2x-2.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+
+                <img
+                  src="./img\team\img_s@1x-2.jpg"
+                  alt="ihor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
               </picture>
-              
+
               <div class="staff__wrapper">
                 <h3 class="staff__name">Микола Тарасов</h3>
                 <p class="staff__profession">Marketing</p>
@@ -384,9 +556,65 @@
             </li>
             <li class="staff__card">
               <picture>
-                <img src="./img/team/mukhaylo-img-7.jpg" alt="mukhaylo" width="270" height="260" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-3.webp 1x,
+                    img\team\img_l@2x-3.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-3.webp 1x,
+                    img\team\img_m@2x-3.webp   2x
+                  "
+                  type="img.webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-3.webp 1x,
+                    img\team\img_s@2x-3.webp   2x
+                  "
+                  type="img.webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img\team\img_l@1x-3.jpg 1x,
+                    img\team\img_l@2x-3.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img\team\img_m@1x-3.jpg 1x,
+                    img\team\img_m@2x-3.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img\team\img_s@1x-3.jpg 1x,
+                    img\team\img_s@2x-3.jpg   2x
+                  "
+                  type="img.jpg"
+                />
+
+                <img
+                  src="./img\team\img_s@1x-3.jpg"
+                  alt="ihor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
               </picture>
-              
+
               <div class="staff__wrapper">
                 <h3 class="staff__name">Михайло Єрмаков</h3>
                 <p class="staff__profession">UI Designer</p>
@@ -505,18 +733,29 @@
       <div class="container">
         <div class="page-footer__container--tablet">
           <div class="footer-address__wrapper">
-            <a class="footer__logo logo" href="">Web<span class="logo__text logo__text--light">Studio</span></a>
+            <a class="footer__logo logo" href=""
+              >Web<span class="logo__text logo__text--light">Studio</span></a
+            >
             <address class="footer__address">
               <ul class="address-list list">
                 <li class="footer__list">
-                  <a href="https://goo.gl/maps/xZHKxqKx7CFX3MVU" class="link footer__direction" target="_blank"
-                    rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                  <a
+                    href="https://goo.gl/maps/xZHKxqKx7CFX3MVU"
+                    class="link footer__direction"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
                 </li>
                 <li class="footer__list">
-                  <a href="mailto:info@devstudio.com" class="link footer__mail">info@devstudio.com</a>
+                  <a href="mailto:info@devstudio.com" class="link footer__mail"
+                    >info@devstudio.com</a
+                  >
                 </li>
                 <li class="footer__list">
-                  <a href="tel:+380961111111" class="link footer__tel">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="link footer__tel"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -525,32 +764,52 @@
             <h3 class="footer__title">приєднуйтесь</h3>
             <ul class="footer-socials__list list">
               <li class="footer-socials__item">
-                <a class="footer-socials__link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="Instagram icon">
+                <a
+                  class="footer-socials__link link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram icon"
+                >
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./img/icons.svg.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
-                <a class="footer-socials__link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="Twitter icon">
+                <a
+                  class="footer-socials__link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter icon"
+                >
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./img/icons.svg.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
-                <a class="footer-socials__link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="Facebook icon">
+                <a
+                  class="footer-socials__link link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook icon"
+                >
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./img/icons.svg.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-socials__item">
-                <a class="footer-socials__link link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                  aria-label="Linkedin icon">
+                <a
+                  class="footer-socials__link link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linkedin icon"
+                >
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./img/icons.svg.svg#icon-linkedin"></use>
                   </svg>
@@ -661,25 +920,35 @@
     <!-- Mobile Menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path fill-rule="evenodd"
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
+            clip-rule="evenodd"
+          ></path>
         </svg>
       </button>
-    
+
       <ul class="mobile-menu">
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link current" href="">Студія</a>
+          <a class="mobile-menu-link link current" href="./index.html"
+            >Студія</a
+          >
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Портфоліо</a>
+          <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
         </li>
         <li class="mobile-menu-item">
           <a class="mobile-menu-link link" href="">Контакти</a>
         </li>
       </ul>
-    
+
       <ul class="mobile-contacts list">
         <li class="mobile-contacts-item">
           <a href="" class="mobile-tel-link link">+38 096 111 11 11</a>
@@ -688,7 +957,7 @@
           <a href="" class="mobile-mail-link link">info@devstudio.com</a>
         </li>
       </ul>
-    
+
       <ul class="mobile-socials list">
         <li class="mobile-socials-item">
           <a href="" class="mobile-social-link link">Instagram</a>
@@ -705,9 +974,12 @@
       </ul>
     </div>
     <script src="./js/modal.js"></script>
-      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-      <script defer src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
